@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <title>JSI.</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h2>JUST SAY IT</h2>
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#idhome" onclick="smoothScroll('idhome')">HOME</a></li>
+                <li><a href="#idservices" onclick="smoothScroll('idservices')">SERVICES</a></li>
+                <li><a href="#idabout" onclick="smoothScroll('idabout')">ABOUT</a></li>
+                <li><a href="#idcontact" onclick="smoothScroll('idcontact')">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div id="idhome">
+            <section class="homes">
+                <div class="home">
+                    <h1>JUST SAY IT</h1>
+                    <h4>Apapun masalahmu, sampaikan saja</h4>
+                    <p>Siap melayani masalah apapun pada perangkat komputer/laptop anda, mempermudah pengelolahan dan promosi star-up anda dengan website yang anda impikan, serta mendesain apapun yang ada difikiran anda hehehe.</p>
+                </div>
+                <div class="home">
+                    <div class="backimgluar">
+                        <div class="backimg">
+                            <img src="img/img68.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="idservices">
+            <div class="servis">
+                <h2>Services</h2>
+                <section class="services">
+                    <div class="service">
+                        <h4>PC/Laptop</h4>
+                        <img src="img/service lp.png" alt="">
+                        <p>Services PC/Laptop perangkat keras maupun lunak, install ulang windows atau up and downgrade windows, upgrade perangkat PC/Laptop.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Web Developer</h4>
+                        <img src="img/web.png" alt="">
+                        <p>Website instansi, star-up, dan kebutuhan pribadi, sesuai keinginan pelanggan dengan gratis domain untuk 1 bulan pertama dari JSI.</p>
+                    </div>
+                    <div class="service">
+                        <h4>Graphic Design</h4>
+                        <img src="img/desain.png" alt="">
+                        <p>Mendesain Spanduk, Logo, Poster, Baju PDH, PDL, Kaos, sesuai keinginan pelanggan.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="idabout">
+            <div class="abouts">
+                <h2>About</h2>
+                <div class="about">
+                    <div class="about1">
+                        <h4>PC/Laptop</h4>
+                        <p>JSI. melakukan pelayanan perbaikan PC/Laptop sesuai dengan kerusakan ataupun masalah yang terjadi pada PC/Laptop. Dengan waktu yang singkat dan tepat, apabila kami menemukan masalah yang berbeda dengan waktu konsultasi, kami akan melakukan konfirmasi terkait kelanjutan dari pengerjaannya.</p>
+                    </div>
+                    <div class="about2">
+                        <h4>Web Developer</h4>
+                        <p>JSI. melakukan pelayanan pembuatan website sesuai dengan keinginan pelanggan. melakukan diskusi mendalam terkait website seperti apa dan fungsinya, agar tidak terjadi miskomunikasi antara pihak JSI. dengan pelanggan. Serta JSI. memberikan gratis domain selama satu bulan yang masuk menjadi paket dalam website tersebut.</p>
+                    </div>
+                    <div class="about3">
+                        <h4>Graphic Design</h4>
+                        <p>JSI. melakukan pelayanan desain grafis untuk keperluan yang tertera pada Services. Sebelum masuk ke proses mendesain pihak JSI. akan mendiskusikan secara mendalam dengan pelanggan terkait desain yang akan dibuat, dan selama proses pembuatan pihak JSI akan memberikan 2 kesempatan untuk melakukan revisi dari arahan pelanggan untuk paket <b>"Normal"</b> dan 5 untuk paket <b>"Upnormal"</b>. JSI. tidak memberikan file mentah hasil desain ke pelanggan melainkan hasil final export.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="idcontact">
+            <div class="contactus">
+                <h2>Contact</h2>
+                <section class="contacts">
+                    <div class="contact">
+                        <a href="mailto:uchaminecraft2003@gmail.com"><img src="img/email.png" alt="" class="email"></a>
+                        <a href="https://instagram.com/umc_gaming?igshid=ZGUzMzM3NWJiOQ=="><img src="img/ig.png" alt="" class="ig"></a>
+                        <a href="https://wa.me/qr/UPZQ2HYBPZBVC1"><img src="img/wa.png" alt="" class="wa"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <p>&copy; 2023. Muhammad Nursan 2105176010.</p>
+        </div>
+    </footer>
+
+<!-- js -->
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+    </script>
+
+</body>
+</html>
